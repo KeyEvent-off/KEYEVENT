@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KEYEVENT - Organisateur d'événements professionnels et privés. Découvrez nos événements passés et à venir, achetez des médias exclusifs et collaborez avec nous.">
+    <meta name="keywords" content="événements, organisation événementielle, KEYEVENT, vidéos privées, partenariat événementiel">
+    <meta name="author" content="KEYEVENT">
+    
+    <!-- Open Graph pour réseaux sociaux -->
+    <meta property="og:title" content="KEYEVENT - Votre partenaire événementiel">
+    <meta property="og:description" content="Organisation d'événements professionnels et privés">
+    <meta property="og:type" content="website">
+    
+    <title>KEYEVENT - Organisation d'Événements Professionnels</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;900&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-key">KEY</span><span class="logo-event">EVENT</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#a-propos" class="nav-link">À Propos</a></li>
+                <li><a href="#evenements" class="nav-link">Événements</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#boutique" class="nav-link">Boutique Média</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-subtitle">Bienvenue chez</span>
+                <span class="hero-main">KEYEVENT</span>
+            </h1>
+            <p class="hero-description">L'art de créer des moments inoubliables</p>
+            <div class="hero-buttons">
+                <a href="#evenements" class="btn btn-primary">Découvrir nos événements</a>
+                <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Défiler</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- À Propos -->
+    <section id="a-propos" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Qui sommes-nous ?</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>KEYEVENT, votre partenaire événementiel</h3>
+                    <p>Depuis notre création, KEYEVENT s'est imposé comme un acteur incontournable dans l'organisation d'événements professionnels et privés. Notre mission est simple : transformer vos idées en expériences mémorables.</p>
+                    <p>Nous croyons que chaque événement est unique et mérite une attention particulière. Notre équipe passionnée met son expertise et sa créativité au service de vos projets, qu'il s'agisse d'un lancement de produit, d'une soirée d'entreprise, d'un mariage ou de tout autre événement spécial.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Événements réalisés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Clients satisfaits</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Ans d'expérience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" fill="none">
+                            <rect width="400" height="500" fill="url(#gradient1)"/>
+                            <path d="M200 150 L250 200 L200 250 L150 200 Z" fill="rgba(255,255,255,0.1)"/>
+                            <circle cx="200" cy="300" r="50" fill="rgba(255,255,255,0.05)"/>
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#e94560;stop-opacity:0.8" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="image-text">Votre photo d'équipe ici</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Événements -->
+    <section id="evenements" class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Nos Événements</h2>
+            </div>
+            
+            <!-- Filtres -->
+            <div class="event-filters">
+                <button class="filter-btn active" data-filter="tous">Tous</button>
+                <button class="filter-btn" data-filter="a-venir">À venir</button>
+                <button class="filter-btn" data-filter="passes">Passés</button>
+            </div>
+
+            <!-- Liste des événements -->
+            <div class="events-grid">
+                <!-- Événement à venir 1 -->
+                <article class="event-card" data-category="a-venir">
+                    <div class="event-image">
+                        <div class="image-placeholder event-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="url(#eventGrad1)"/>
+                                <circle cx="200" cy="150" r="60" fill="rgba(255,255,255,0.1)"/>
+                                <defs>
+                                    <linearGradient id="eventGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="event-badge badge-upcoming">À venir</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <span class="date-day">15</span>
+                            <span class="date-month">Mars 2026</span>
+                        </div>
+                        <h3 class="event-title">Gala d'Entreprise 2026</h3>
+                        <p class="event-description">Une soirée exceptionnelle pour célébrer les succès de l'année avec vos collaborateurs dans un cadre prestigieux.</p>
+                        <div class="event-meta">
+                            <span class="event-location">📍 Paris, France</span>
+                            <span class="event-capacity">👥 200 personnes</span>
+                        </div>
+                        <button class="btn btn-outline">En savoir plus</button>
+                    </div>
+                </article>
+
+                <!-- Événement à venir 2 -->
+                <article class="event-card" data-category="a-venir">
+                    <div class="event-image">
+                        <div class="image-placeholder event-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="url(#eventGrad2)"/>
+                                <rect x="150" y="100" width="100" height="100" fill="rgba(255,255,255,0.1)" transform="rotate(45 200 150)"/>
+                                <defs>
+                                    <linearGradient id="eventGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="event-badge badge-upcoming">À venir</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <span class="date-day">22</span>
+                            <span class="date-month">Avril 2026</span>
+                        </div>
+                        <h3 class="event-title">Lancement Produit Tech</h3>
+                        <p class="event-description">Présentation exclusive d'une innovation technologique majeure devant un parterre d'experts et de journalistes.</p>
+                        <div class="event-meta">
+                            <span class="event-location">📍 Lyon, France</span>
+                            <span class="event-capacity">👥 150 personnes</span>
+                        </div>
+                        <button class="btn btn-outline">En savoir plus</button>
+                    </div>
+                </article>
+
+                <!-- Événement passé 1 -->
+                <article class="event-card" data-category="passes">
+                    <div class="event-image">
+                        <div class="image-placeholder event-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="url(#eventGrad3)"/>
+                                <polygon points="200,100 250,200 150,200" fill="rgba(255,255,255,0.1)"/>
+                                <defs>
+                                    <linearGradient id="eventGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="event-badge badge-past">Terminé</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <span class="date-day">10</span>
+                            <span class="date-month">Jan 2026</span>
+                        </div>
+                        <h3 class="event-title">Soirée Networking Premium</h3>
+                        <p class="event-description">Une soirée dédiée aux professionnels pour créer des connexions enrichissantes dans une ambiance conviviale.</p>
+                        <div class="event-meta">
+                            <span class="event-location">📍 Marseille, France</span>
+                            <span class="event-capacity">👥 100 personnes</span>
+                        </div>
+                        <a href="#boutique" class="btn btn-outline">Voir les médias</a>
+                    </div>
+                </article>
+
+                <!-- Événement passé 2 -->
+                <article class="event-card" data-category="passes">
+                    <div class="event-image">
+                        <div class="image-placeholder event-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="url(#eventGrad4)"/>
+                                <ellipse cx="200" cy="150" rx="80" ry="60" fill="rgba(255,255,255,0.1)"/>
+                                <defs>
+                                    <linearGradient id="eventGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="event-badge badge-past">Terminé</span>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-date">
+                            <span class="date-day">05</span>
+                            <span class="date-month">Déc 2025</span>
+                        </div>
+                        <h3 class="event-title">Gala de Charité</h3>
+                        <p class="event-description">Un événement caritatif mémorable qui a permis de collecter des fonds pour une noble cause.</p>
+                        <div class="event-meta">
+                            <span class="event-location">📍 Nice, France</span>
+                            <span class="event-capacity">👥 300 personnes</span>
+                        </div>
+                        <a href="#boutique" class="btn btn-outline">Voir les médias</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie Photos -->
+    <section id="galerie" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Galerie Photos</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large">
+                    <div class="image-placeholder gallery-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+                            <rect width="600" height="400" fill="url(#galGrad1)"/>
+                            <circle cx="300" cy="200" r="80" fill="rgba(255,255,255,0.15)"/>
+                            <defs>
+                                <linearGradient id="galGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ee0979;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ff6a00;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Événement Corporate 2025</h3>
+                        <p>Paris</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder gallery-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+                            <rect width="400" height="400" fill="url(#galGrad2)"/>
+                            <rect x="150" y="150" width="100" height="100" fill="rgba(255,255,255,0.15)"/>
+                            <defs>
+                                <linearGradient id="galGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#36d1dc;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#5b86e5;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Soirée Gala</h3>
+                        <p>Lyon</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder gallery-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+                            <rect width="400" height="400" fill="url(#galGrad3)"/>
+                            <polygon points="200,120 280,280 120,280" fill="rgba(255,255,255,0.15)"/>
+                            <defs>
+                                <linearGradient id="galGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#a8edea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#fed6e3;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Lancement Produit</h3>
+                        <p>Marseille</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder gallery-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+                            <rect width="400" height="400" fill="url(#galGrad4)"/>
+                            <ellipse cx="200" cy="200" rx="100" ry="80" fill="rgba(255,255,255,0.15)"/>
+                            <defs>
+                                <linearGradient id="galGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ffecd2;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#fcb69f;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Networking Event</h3>
+                        <p>Nice</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-wide">
+                    <div class="image-placeholder gallery-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+                            <rect width="800" height="400" fill="url(#galGrad5)"/>
+                            <path d="M100,200 Q250,100 400,200 T700,200" stroke="rgba(255,255,255,0.15)" stroke-width="3" fill="none"/>
+                            <defs>
+                                <linearGradient id="galGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Événement Musical</h3>
+                        <p>Bordeaux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boutique Média -->
+    <section id="boutique" class="shop-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Boutique Média</h2>
+                <p class="section-subtitle">Achetez les vidéos et photos exclusives de nos événements</p>
+            </div>
+            <div class="shop-grid">
+                <div class="shop-item">
+                    <div class="shop-media">
+                        <div class="image-placeholder shop-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="url(#shopGrad1)"/>
+                                <polygon points="160,100 160,200 260,150" fill="rgba(255,255,255,0.3)"/>
+                                <defs>
+                                    <linearGradient id="shopGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#e94560;stop-opacity:0.9" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span class="media-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="shop-content">
+                        <h3 class="shop-title">Vidéo Gala 2025 - Version Complète</h3>
+                        <p class="shop-description">Revivez l'intégralité de notre gala annuel avec cette vidéo HD professionnelle de 45 minutes.</p>
+                        <div class="shop-info">
+                            <span class="shop-type">🎥 Vidéo HD</span>
+                            <span class="shop-duration">⏱️ 45 min</span>
+                        </div>
+                        <div class="shop-footer">
+                            <span class="shop-price">49,99 €</span>
+                            <button class="btn btn-primary btn-small">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <div class="shop-media">
+                        <div class="image-placeholder shop-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="url(#shopGrad2)"/>
+                                <circle cx="200" cy="150" r="40" fill="rgba(255,255,255,0.3)"/>
+                                <rect x="160" y="110" width="80" height="80" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                                <defs>
+                                    <linearGradient id="shopGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span class="media-icon">📷</span>
+                        </div>
+                    </div>
+                    <div class="shop-content">
+                        <h3 class="shop-title">Pack Photos - Networking 2026</h3>
+                        <p class="shop-description">Collection de 150 photos professionnelles haute résolution de notre soirée networking.</p>
+                        <div class="shop-info">
+                            <span class="shop-type">📸 Photos</span>
+                            <span class="shop-duration">🖼️ 150 images</span>
+                        </div>
+                        <div class="shop-footer">
+                            <span class="shop-price">29,99 €</span>
+                            <button class="btn btn-primary btn-small">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <div class="shop-media">
+                        <div class="image-placeholder shop-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+                                <rect width="400" height="300" fill="url(#shopGrad3)"/>
+                                <polygon points="160,100 160,200 260,150" fill="rgba(255,255,255,0.3)"/>
+                                <defs>
+                                    <linearGradient id="shopGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <span class="media-icon">▶</span>
+                        </div>
+                    </div>
+                    <div class="shop-content">
+                        <h3 class="shop-title">Highlights - Lancement Produit</h3>
+                        <p class="shop-description">Les meilleurs moments de notre événement de lancement dans une vidéo dynamique de 10 minutes.</p>
+                        <div class="shop-info">
+                            <span class="shop-type">🎥 Vidéo HD</span>
+                            <span class="shop-duration">⏱️ 10 min</span>
+                        </div>
+                        <div class="shop-footer">
+                            <span class="shop-price">19,99 €</span>
+                            <button class="btn btn-primary btn-small">Acheter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Nos Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3 class="service-title">Organisation Complète</h3>
+                    <p class="service-description">De la conception à la réalisation, nous gérons tous les aspects de votre événement pour une expérience sans stress.</p>
+                    <ul class="service-features">
+                        <li>Planification stratégique</li>
+                        <li>Gestion du budget</li>
+                        <li>Coordination des prestataires</li>
+                        <li>Logistique complète</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3 class="service-title">Design & Décoration</h3>
+                    <p class="service-description">Création d'ambiances uniques et mémorables adaptées à votre identité et vos objectifs.</p>
+                    <ul class="service-features">
+                        <li>Concept créatif</li>
+                        <li>Scénographie sur mesure</li>
+                        <li>Décoration personnalisée</li>
+                        <li>Identité visuelle</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3 class="service-title">Captation Média</h3>
+                    <p class="service-description">Services photo et vidéo professionnels pour immortaliser chaque moment important de votre événement.</p>
+                    <ul class="service-features">
+                        <li>Photographie professionnelle</li>
+                        <li>Vidéo HD/4K</li>
+                        <li>Live streaming</li>
+                        <li>Montage et post-production</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎤</div>
+                    <h3 class="service-title">Animation & Entertainment</h3>
+                    <p class="service-description">Sélection et coordination d'animateurs, artistes et entertainers pour dynamiser vos événements.</p>
+                    <ul class="service-features">
+                        <li>Casting d'artistes</li>
+                        <li>Animation interactive</li>
+                        <li>DJ et musiciens</li>
+                        <li>Spectacles sur mesure</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🍽️</div>
+                    <h3 class="service-title">Traiteur & Restauration</h3>
+                    <p class="service-description">Sélection de traiteurs d'excellence et création de menus personnalisés pour ravir vos invités.</p>
+                    <ul class="service-features">
+                        <li>Menus sur mesure</li>
+                        <li>Traiteurs premium</li>
+                        <li>Service à table</li>
+                        <li>Bar et cocktails</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3 class="service-title">Consulting & Accompagnement</h3>
+                    <p class="service-description">Conseil stratégique et accompagnement personnalisé pour optimiser l'impact de vos événements.</p>
+                    <ul class="service-features">
+                        <li>Audit et recommandations</li>
+                        <li>Formation équipes</li>
+                        <li>Suivi post-événement</li>
+                        <li>ROI et analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Partenariat -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Contact & Partenariat</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Discutons de votre projet</h3>
+                    <p>Que vous souhaitiez organiser un événement, collaborer avec nous ou devenir partenaire, notre équipe est à votre écoute.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <a href="mailto:contact@keyevent.fr">contact@keyevent.fr</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📱</div>
+                            <div class="method-details">
+                                <h4>Téléphone</h4>
+                                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-details">
+                                <h4>Adresse</h4>
+                                <p>123 Avenue des Événements<br>75001 Paris, France</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Type de demande *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez...</option>
+                                <option value="event">Organisation d'événement</option>
+                                <option value="collaboration">Demande de collaboration</option>
+                                <option value="partnership">Proposition de partenariat</option>
+                                <option value="media">Achat de média</option>
+                                <option value="other">Autre demande</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Votre message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-key">KEY</span><span class="logo-event">EVENT</span>
+                    </div>
+                    <p>Créateur d'événements mémorables depuis 2015</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#a-propos">À Propos</a></li>
+                            <li><a href="#evenements">Événements</a></li>
+                            <li><a href="#services">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Ressources</h4>
+                        <ul>
+                            <li><a href="#galerie">Galerie</a></li>
+                            <li><a href="#boutique">Boutique</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Légal</h4>
+                        <ul>
+                            <li><a href="#">Mentions légales</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
+                            <li><a href="#">CGV</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KEYEVENT. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
