@@ -112,153 +112,7 @@
         </div>
     </section>
 
-    <!-- Événements -->
-    <section id="evenements" class="events-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">Nos Événements</h2>
-            </div>
-            
-            <!-- Filtres -->
-            <div class="event-filters">
-                <button class="filter-btn active" data-filter="tous">Tous</button>
-                <button class="filter-btn" data-filter="a-venir">À venir</button>
-                <button class="filter-btn" data-filter="passes">Passés</button>
-            </div>
-
-            <!-- Liste des événements -->
-            <div class="events-grid">
-                <!-- Événement à venir 1 -->
-                <article class="event-card" data-category="a-venir">
-                    <div class="event-image">
-                        <div class="image-placeholder event-placeholder">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
-                                <rect width="400" height="300" fill="url(#eventGrad1)"/>
-                                <circle cx="200" cy="150" r="60" fill="rgba(255,255,255,0.1)"/>
-                                <defs>
-                                    <linearGradient id="eventGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <span class="event-badge badge-upcoming">À venir</span>
-                    </div>
-                    <div class="event-content">
-                        <div class="event-date">
-                            <span class="date-day">15</span>
-                            <span class="date-month">Mars 2026</span>
-                        </div>
-                        <h3 class="event-title">Gala d'Entreprise 2026</h3>
-                        <p class="event-description">Une soirée exceptionnelle pour célébrer les succès de l'année avec vos collaborateurs dans un cadre prestigieux.</p>
-                        <div class="event-meta">
-                            <span class="event-location">📍 Paris, France</span>
-                            <span class="event-capacity">👥 200 personnes</span>
-                        </div>
-                        <button class="btn btn-outline">En savoir plus</button>
-                    </div>
-                </article>
-
-                <!-- Événement à venir 2 -->
-                <article class="event-card" data-category="a-venir">
-                    <div class="event-image">
-                        <div class="image-placeholder event-placeholder">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
-                                <rect width="400" height="300" fill="url(#eventGrad2)"/>
-                                <rect x="150" y="100" width="100" height="100" fill="rgba(255,255,255,0.1)" transform="rotate(45 200 150)"/>
-                                <defs>
-                                    <linearGradient id="eventGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <span class="event-badge badge-upcoming">À venir</span>
-                    </div>
-                    <div class="event-content">
-                        <div class="event-date">
-                            <span class="date-day">22</span>
-                            <span class="date-month">Avril 2026</span>
-                        </div>
-                        <h3 class="event-title">Lancement Produit Tech</h3>
-                        <p class="event-description">Présentation exclusive d'une innovation technologique majeure devant un parterre d'experts et de journalistes.</p>
-                        <div class="event-meta">
-                            <span class="event-location">📍 Lyon, France</span>
-                            <span class="event-capacity">👥 150 personnes</span>
-                        </div>
-                        <button class="btn btn-outline">En savoir plus</button>
-                    </div>
-                </article>
-
-                <!-- Événement passé 1 -->
-                <article class="event-card" data-category="passes">
-                    <div class="event-image">
-                        <div class="image-placeholder event-placeholder">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
-                                <rect width="400" height="300" fill="url(#eventGrad3)"/>
-                                <polygon points="200,100 250,200 150,200" fill="rgba(255,255,255,0.1)"/>
-                                <defs>
-                                    <linearGradient id="eventGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <span class="event-badge badge-past">Terminé</span>
-                    </div>
-                    <div class="event-content">
-                        <div class="event-date">
-                            <span class="date-day">10</span>
-                            <span class="date-month">Jan 2026</span>
-                        </div>
-                        <h3 class="event-title">Soirée Networking Premium</h3>
-                        <p class="event-description">Une soirée dédiée aux professionnels pour créer des connexions enrichissantes dans une ambiance conviviale.</p>
-                        <div class="event-meta">
-                            <span class="event-location">📍 Marseille, France</span>
-                            <span class="event-capacity">👥 100 personnes</span>
-                        </div>
-                        <a href="#boutique" class="btn btn-outline">Voir les médias</a>
-                    </div>
-                </article>
-
-                <!-- Événement passé 2 -->
-                <article class="event-card" data-category="passes">
-                    <div class="event-image">
-                        <div class="image-placeholder event-placeholder">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
-                                <rect width="400" height="300" fill="url(#eventGrad4)"/>
-                                <ellipse cx="200" cy="150" rx="80" ry="60" fill="rgba(255,255,255,0.1)"/>
-                                <defs>
-                                    <linearGradient id="eventGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
-                                        <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                        </div>
-                        <span class="event-badge badge-past">Terminé</span>
-                    </div>
-                    <div class="event-content">
-                        <div class="event-date">
-                            <span class="date-day">05</span>
-                            <span class="date-month">Déc 2025</span>
-                        </div>
-                        <h3 class="event-title">Gala de Charité</h3>
-                        <p class="event-description">Un événement caritatif mémorable qui a permis de collecter des fonds pour une noble cause.</p>
-                        <div class="event-meta">
-                            <span class="event-location">📍 Nice, France</span>
-                            <span class="event-capacity">👥 300 personnes</span>
-                        </div>
-                        <a href="#boutique" class="btn btn-outline">Voir les médias</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+   
 
     <!-- Galerie Photos -->
     <section id="galerie" class="gallery-section">
@@ -572,23 +426,23 @@
                             <div class="method-icon">📱</div>
                             <div class="method-details">
                                 <h4>Téléphone</h4>
-                                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                                
                             </div>
                         </div>
                         <div class="contact-method">
                             <div class="method-icon">📍</div>
                             <div class="method-details">
                                 <h4>Adresse</h4>
-                                <p>123 Avenue des Événements<br>75001 Paris, France</p>
+                               ESSONNE
                             </div>
-                        </div>
+                        </div>keyevent.private@gmail.com
                     </div>
 
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
-                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                       
+                        https://www.instagram.com/key_event75/
+                        
+                        https://x.com/Keyevent75/
                     </div>
                 </div>
 
